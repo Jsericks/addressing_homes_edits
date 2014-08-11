@@ -553,6 +553,10 @@ div.blog_entries > div.blog_entry_container.two h6 {
 
 		letter-spacing: 0;
 	}
+	#blog_body div.gallery-wrap {
+		margin: 0 auto;
+	}
+
 	#blog_body img {
 		margin: 20px auto;
 	}
