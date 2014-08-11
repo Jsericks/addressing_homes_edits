@@ -1,0 +1,82 @@
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+body {
+  font-family: 'Open Sans', 'Oswald', arial, serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  /* font-family: 'Open Sans', arial, serif; */
+  font-family: 'Open Sans', 'Oswald',sans-serif;
+  font-weight: 400; 
+}
+
+
+#about h3 {
+  color: #233C8D;
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#about p {
+  color: #000;
+  line-height: 22px;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-family: 'Open Sans','Oswald', sans-serif;
+  font-weight: 400;
+}
+
+
+.subtitle{
+  font-family:'Open Sans', arial, serif;
+}
+
+.top_btn,
+.bttn {
+  font-family:'Oswald','Open Sans', sans-serif;
+}
+
+.slider_title h2{
+  /* font-family:'Pacifico', arial, serif; */
+  font-family: 'Open Sans', 'Oswald',sans-serif;
+    font-weight: 400;   
+}
+
+#pageLoad{
+  font-family: 'Oswald', 'Open Sans' arial, serif;
+  letter-spacing: 75px;
+}
+
+.heading{
+  /* font-family: 'Open Sans', arial, serif;
+  font-weight:600; */
+  font-family: 'Oswald', 'Open Sans',sans-serif;
+  font-weight: 400; 
+}
+
+.nav > li > a{
+  font-size: 1.4em;
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+  font-weight: 400; 
+}
+
+div.blog_entries > div.blog_entry_container > .blog_sub > h6 {
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+  letter-spacing: 0;
+}
+
+.contact-bg label {
+  font-family: 'Open Sans', 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.ctc_bttn {
+  font-family: 'Oswald', 'Open Sans', sans-serif;
+  font-weight: 400;
+  
+}
+

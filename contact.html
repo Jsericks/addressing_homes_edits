@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/ico/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico/favicon.ico">
+
+    <title>Addressing Homes | Contact</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- color schema -->
+    <link href="css/color-5.css" rel="stylesheet" id="layoutstyle">   
+    
+    <!-- google font for title -->
+    <link href="css/google-font.css" rel="stylesheet" id="googlefont">    
+    
+    <!-- fontawesome -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="lib/superslides/dist/stylesheets/superslides.css" rel="stylesheet">
+  
+    <link href="lib/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    
+    <link href="lib/3DGridEffect/css/component.css" rel="stylesheet" />
+    <script src="lib/3DGridEffect/js/modernizr.custom.js"></script>   
+    
+    <link href="lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet" > 
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Mask -->
+    <div class="mask">      
+      <div id="intro-loader">
+      </div>    
+    </div>
+    <!-- Nav Start -->
+    <div id="nav-wrapper">
+    <div id="nav" class="navbar">
+      <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Navigation Toggle</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand"><img src="images/nav-logo.png" alt="logo"></div>
+        </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="plan.html">The Plan</a></li>
+              <li><a href="blogs.html">Blog</a></li> 
+              <li><a href="about.html">About Us</a></li>  
+              <li class="current"><a href="contact.html">Contact Us</a></li>  
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>    
+    </div>
+    <!-- Nav End -->
+    <!-- Contact Form -->
+    <div class="contact-bg" id="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center heading animate_top"><span class="brd">WE'D LOVE TO HEAR FROM YOU</span></div>
+            <!-- Start Form -->
+            <form name="contactForm" id='contact_form' method="post" action='lib/ajax-html-contact-form/email.php'>
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 contact_form animate_left">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- Name -->
+                      <label for="name">Your Name</label>
+                      <div id='name_error' class='error'><img src='images/error.png' alt="img">Please enter your name.</div>
+                      <input type="text"  name='name' id='name' class="form-control" placeholder="Your name">
+                      <!-- Country -->
+                      <label for="country">Country</label>
+                      <div id='country_error' class='error'><img src='images/error.png' alt="img">Please enter your country.</div>
+                      <input type="text"  name='country' id='country' class="form-control" placeholder="Country">
+                      <!-- Phone Number -->
+                      <label for="phone">Phone Number</label>
+                      <div id='phone_error' class='error'><img src='images/error.png' alt="img">Please enter your phone number.</div>
+                      <input type="text"  name='phone' id='phone' class="form-control" placeholder="Phone Number">
+                      <!-- Email Address -->
+                      <label for="email">Email Address</label>
+                      <div id='email_error' class='error'><img src='images/error.png' alt="img">Please enter your email address.</div>
+                      <input type="text"  name='email' id='email' class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="message">Message</label>
+                      <div id='message_error' class='error'><img src='images/error.png' alt="img">Please enter your message.</div>
+                      <textarea name='message' id='message' class="form-control" placeholder="Message"></textarea>
+                                
+                      <button class="ctc_bttn pull-right" id='send_message' type="submit">Send Message</button>
+                      <div id='mail_success' class='success'><img src='images/success.png' alt="img">Your message has been sent successfully.</div>
+                      <div id='mail_fail' class='error'><img src='images/error.png' alt="img"> Sorry, error occured this time sending your message.</div>
+                      <div class="sr-only">
+                        <label for="subject">Leave Blank Please</label>
+                        <input type="text" name="subject" id="subject" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </form> <!-- End Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Footer -->
+    <div class="footer" id="footer">
+    <div class="container">
+          <div class="row text-center">
+              <div class="col-md-12"><p>Copyright &copy; 2014 Addressing Homes, LLC | 8138 S State Street Suite 3 | Midvale, Utah 84047</p></div>
+            </div>
+      </div>
+    </div>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script> 
+  
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  
+  <!--<script src="js/inviewport.jquery.js"></script>-->
+  
+  <script src="js/jquery.animateNumbers.js"></script> 
+  
+  <script src="js/responsive-tabs.js"></script>
+  
+  <script src="lib/jQuery-One-Page-Nav/jquery.scrollTo.js"></script>
+  <script src="lib/jQuery-One-Page-Nav/jquery.nav.js"></script> 
+  
+  <!-- jquery-parallax -->
+  <script src="lib/jquery-parallax/scripts/jquery.parallax-1.1.3.js"></script>  
+  
+  <!-- mailchimp -->
+  <script src="lib/mcapi-simple-subscribe-jquery/js/mailing-list.js"></script>        
+  <!-- mailchimp -->  
+  
+  <script src="lib/ajax-html-contact-form/js/validation.js"></script>
+  
+  <script src="lib/superslides/dist/jquery.superslides.js"></script>
+  
+  <script src="lib/jquery.appear/jquery.appear.js"></script>  
+  
+  <script src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+  
+  <script src="lib/3DGridEffect/js/classie.js"></script>
+  <script src="lib/3DGridEffect/js/helper.js"></script>
+  <script src="lib/3DGridEffect/js/grid3d.js"></script>
+  
+  <script src="lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  
+  <script src="js/custom.js"></script>
+
+  <script>
+    x = $('#div-that-increase-height').height()+20; // +20 gives space between div and footer
+    y = $(window).height();
+
+    if (x+71<=y){ // 100 is the height of your footer
+        $('#footer').css('top', y-71+'px');// again 100 is the height of your footer
+        $('#footer').css('display', 'block');
+    }else{
+        $('#footer').css('top', x+'px');
+        $('#footer').css('display', 'block');
+    }
+  </script>
+  </body>
+</html>
