@@ -186,7 +186,6 @@
     var $blogBody = curBlog["regular-body"];
     $('#blog_title').append($title);
     $('#blog_body').append($blogBody);
-    // test fix image display
     $("img").addClass("img-responsive");
 
   </script>
