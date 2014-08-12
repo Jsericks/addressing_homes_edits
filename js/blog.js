@@ -6,6 +6,7 @@ jQuery(function(){
 
   var post_count = tumblr_api_read["posts"].length;
 
+
   $.each(tumblr_api_read["posts"],function(i){
     var counter = i + 1;
     var cont_one = [1,3,5,6,7,8,10,12];
@@ -25,17 +26,23 @@ jQuery(function(){
 
     // Tumblr content
     var $post_content = $.parseHTML(tumblr_api_read["posts"][i]["regular-body"])[0]["innerText"];
+    var content = $.parseHTML(tumblr_api_read["posts"][i]["regular-body"]);
     var $blurb = $post_content.substr(0, 174) + "...";
     var $blog_title = tumblr_api_read["posts"][i]["regular-title"];
+    var image = $(tumblr_api_read["posts"][i]["regular-body"]).find("img");
+ 
 
     // insert values into partials
     $title.text($blog_title);
     $disp_blurb.text($blurb);
     $blog_link.attr("href",link);
-    console.log($blog_link);
 
     if ($.inArray(counter, cont_one) !== -1) {
       selected = $blog_entry_container_one;
+      if (image[0] !== undefined){
+        var bg = "url(" + $(image[0]).attr("src") + ") center center no-repeat";
+        $blog_entry_container_one.css("background",bg);
+      }
 
       $title.append($title_arrow);
       $cols.append($title);
