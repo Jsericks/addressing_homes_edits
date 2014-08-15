@@ -252,34 +252,34 @@
   <!-- videoBG -->
   <script src="lib/videoBG/jquery.videoBG.js"></script>
   <script>
-  $('.fancybox-media')
-        .attr('rel', 'media-gallery')
-        .fancybox({
-          openEffect : 'none',
-          closeEffect : 'none',
-          prevEffect : 'none',
-          nextEffect : 'none',
-          arrows : false,
-          helpers : {
-            media : {},
-            buttons : {}
-          }
-        });
+    $('.fancybox-media')
+    .attr('rel', 'media-gallery')
+    .fancybox({
+      openEffect : 'none',
+      closeEffect : 'none',
+      prevEffect : 'none',
+      nextEffect : 'none',
+      arrows : false,
+      helpers : {
+        media : {},
+        buttons : {}
+      }
+    });
 
-        $('#intro').videoBG({
-          position:"relative",
-          scale: true,
-          // height: 720,
-          width: "100%",
-          zIndex: 100,
-          mp4: "docs/bg-vid.mp4",
-          ogv: "docs/bg-vid.oggtheora.ogv",
-          webm: "docs/bg-vid.webmsd.webm",
-          poster: "images/main.png",
-          opacity: 1
-        });
-        $('video').attr('muted',true).addClass('hidden-xs');
-        </script>
+    // $('#intro').videoBG({
+    //   position:"relative",
+    //   scale: true,
+    //   // height: 720,
+    //   width: "100%",
+    //   zIndex: 100,
+    //   mp4: "docs/bg-vid.mp4",
+    //   ogv: "docs/bg-vid.oggtheora.ogv",
+    //   webm: "docs/bg-vid.webmsd.webm",
+    //   poster: "images/main.png",
+    //   opacity: 1
+    // });
+    // $('video').attr('muted',true).addClass('hidden-xs');
+  </script>
   
   <script src="js/custom.js"></script>
   </body>
